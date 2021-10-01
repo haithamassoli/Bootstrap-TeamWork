@@ -1,0 +1,39 @@
+.apps {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(to right, rgb(53, 51, 238), rgb(150, 28, 227));
+}
+
+.content {
+  width: 100%;
+  height: 600px;
+  background: url(https://picsum.photos/2420/1200) no-repeat center center fixed;
+}
+
+.backimg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(3, 3, 3, 0.7);
+}
+
+.backimg-text {
+  margin-top: 200px;
+}
+.applestore {
+  background: url(./app-store-badge.svg) no-repeat right;
+  height: 40px;
+}
+
+.playstore {
+  background: url(./google-play-badge.svg) no-repeat left;
+  height: 40px;
+}
+
+@media (max-width: 576px) {
+  .applestore,
+  .playstore {
+    background-position: center;
+  }
+}
